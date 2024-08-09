@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "backend-dev": "export FLASK_APP=backend/app/app.py && flask run --host=0.0.0.0 --port=8080",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
