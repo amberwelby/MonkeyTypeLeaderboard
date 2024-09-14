@@ -5,7 +5,8 @@ import { Button } from "@nextui-org/react";
 
 export default function Home() {
   return (
-    <div className="bg-red-900">
+    <div>
+      <div className="bg-red-900">hi</div>
       <LeaderBoard />
     </div>
   );
