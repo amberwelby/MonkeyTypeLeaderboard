@@ -32,11 +32,6 @@ const LeaderBoard = () => {
           <TableCell>Senior Developer</TableCell>
           <TableCell>Active</TableCell>
         </TableRow>
-        <TableRow key="4">
-          <TableCell>William Howard</TableCell>
-          <TableCell>Community Manager</TableCell>
-          <TableCell>Vacation</TableCell>
-        </TableRow>
       </TableBody>
     </Table>
   );
