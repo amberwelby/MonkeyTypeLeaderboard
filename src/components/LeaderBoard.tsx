@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Table,
   TableHeader,
@@ -59,6 +59,9 @@ const LeaderBoard = () => {
   const getUserName = (e: React.ChangeEvent<HTMLInputElement>) => {
     setUserName(e.target.value);
   };
+  useEffect(() => {
+    retrieve();
+  }, []);
   return (
     <div className="flex justify-center items-center min-h-screen">
       <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
@@ -66,9 +69,6 @@ const LeaderBoard = () => {
       </div>
       <Button color="primary" onClick={addEntry}>
         Add Player
-      </Button>
-      <Button color="primary" onClick={retrieve}>
-        Retrieve
       </Button>
       <div>
         <Table
